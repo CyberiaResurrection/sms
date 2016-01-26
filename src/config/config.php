@@ -6,7 +6,7 @@ return [
     |--------------------------------------------------------------------------
     | Sms Service Config
     |--------------------------------------------------------------------------
-    |   gateway = Log / Clickatell / Gupshup / MVaayoo / SmsAchariya / SmsCountry / SmsLane / Custom
+    |   gateway = Log / Clickatell / Gupshup / MVaayoo / SmsAchariya / SmsCountry / SmsLane / SmsBroadcast / Custom
     |   view    = File
     */
 
@@ -51,6 +51,13 @@ return [
         'password'  => '',
         'sid'  => 'WebSMS',
         'gwid'  => '1',                     // 1 - Promotional & 2 - Transactional Route
+    ],
+
+    'smsbroadcast' => [                     // Get it from http://smsbroadcast.com.au
+        'username' => '',
+        'password' => '',
+        'from' => '',
+        'maxsplit' => 153
     ],
 
     'custom' => [                           // Can be used for any gateway
